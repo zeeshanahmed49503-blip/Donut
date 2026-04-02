@@ -1,0 +1,137 @@
+@media (max-width: 900px) {
+    .nav-links {
+        display: none; /* Add JS to toggle this */
+    }
+    .hamburger {
+        display: flex;
+    }
+    .contact-li{
+        display: block;
+    }
+    .btn-contact{
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .hamburger {
+        display: flex;
+        z-index: 1001; /* Menu ke upar rahe */
+    }
+
+    .nav-links {
+        display: flex; /* Display none hata kar flex karein */
+        position: absolute;
+        top: 90px;
+        left: -100%; /* Shuru mein screen se bahar */
+        flex-direction: column;
+        background-color: var(--white);
+        width: 100%;
+        height: calc(100vh - 90px);
+        text-align: center;
+        transition: 0.4s; 
+        box-shadow: 0 10px 10px rgba(0,0,0,0.05);
+        padding: 50px 0;
+        gap: 40px;
+    }
+
+    .nav-links.active {
+        left: 0;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    #mobile-menu.is-active .bar:nth-child(1) {
+        transform: translateY(10px) rotate(45deg);
+    }
+    #mobile-menu.is-active .bar:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+}
+
+
+@media (max-width: 992px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-actions {
+        justify-content: center;
+    }
+    
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hero{
+        margin-top: 95px;
+    }
+    
+    .floating-donut {
+        max-width: 350px;
+    }
+    .badge-1, .badge-2{
+        padding: 10px 25px;
+        font-size: 17px;
+    }
+    .badge-2{
+        right: 0%;
+    }
+    .about-us-section h1, .about-us-section span{
+        font-size: 7vw;
+    }
+}
+
+@media(max-width:600px){
+    .box1{
+        width: 80%;
+        margin: 10px 0;
+    }
+    .box1 img{
+        border-radius: 50%;
+    }
+    .latest-items .text-head{
+        font-size: 7vw;
+    }
+    .about-us-section h1, .about-us-section span{
+        font-size: 10vw;
+    }
+}
+
+@media (max-width: 900px) {
+    .about-grid {
+        grid-template-columns: 1fr; /* Stacks everything in one column */
+    }
+
+    .image-block {
+        height: 350px; /* Give it space for images on mobile */
+    }
+
+    .img-wrapper-top {
+        height: 300px;
+    }
+
+    .img-wrapper-top img {
+        height: 300px;
+    }
+
+    .shape-container {
+        height: 300px;
+    }
+
+    .shape-container img {
+        height: 300px;
+    }
+
+    .grid-block {
+        padding: 30px;
+    }
+}
+
+@media (max-width:1000px){
+    .modern-cta img{
+        display: none;
+    }
+}
