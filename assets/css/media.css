@@ -86,7 +86,7 @@
 
 @media(max-width:600px){
     .box1{
-        width: 80%;
+        width: 90%;
         margin: 10px 0;
     }
     .box1 img{
@@ -102,7 +102,9 @@
 
 @media (max-width: 900px) {
     .about-grid {
-        grid-template-columns: 1fr; /* Stacks everything in one column */
+        grid-template-columns: 1.5fr; /* Stacks everything in one column */
+        margin: 0 auto;
+        
     }
 
     .image-block {
