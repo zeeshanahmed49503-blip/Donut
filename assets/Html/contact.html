@@ -285,16 +285,16 @@ main{
             const originalText = btn.innerText;
             
             btn.innerText = "Sent! successfully";
-            btn.style.background = "linear-gradient(45deg, #7afcff, #45b3e0)";
+            btn.style.background = "green";
             
             setTimeout(() => {
                 btn.innerText = originalText;
-                btn.style.background = "linear-gradient(45deg, var(--primary-pink), #ff4d94)";
+                btn.style.background = "#ff4d94";
                 e.target.reset();
             }, 3000);
-                            btn.style.background = "#ff4d94)";
 
         });
+
     </script>
     <script src="../js/script.js"></script>
 </body>
