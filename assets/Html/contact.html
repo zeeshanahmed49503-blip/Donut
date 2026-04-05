@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Donut Website</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/media.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+    :root {
+            --primary-pink2: #ff7eb9;
+            --secondary-purple: #7afcff;
+            --bg-dark: #0f0f12;
+            --glass-bg: rgba(255, 255, 255, 0.05);
+        }
+    * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'normal', Tahoma, Geneva, Verdana, sans-serif;
+        }
+main{
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+}
+
+        .contact-container {
+            display: flex;
+            width: 1200px;
+            max-width: 95%;
+            height: 600px;
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border-radius: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 25px 45px rgba(0, 0, 0, 0.21);
+            overflow: hidden;
+            margin-top: 90px;
+            margin-bottom: 50px;
+            color: black;
+        }
+
+        /* Left Side: Donut Animation */
+        .donut-side {
+            flex: 1;
+            background: rgba(255, 149, 209, 0.769);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            border-right: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        canvas#donutCanvas {
+            cursor: pointer;
+        }
+
+      
+        /* Right Side: Form */
+        .form-side {
+            flex: 1;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .form-side h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+          color: var(--primary-pink2);
+          font-family: 'italic';
+        }
+
+        .form-side p {
+            color: #888;
+            margin-bottom: 30px;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .input-group input, .input-group textarea {
+            width: 100%;
+            padding: 12px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            color: rgb(0, 0, 0);
+            outline: none;
+            transition: 0.3s;
+        }
+
+        .input-group textarea {
+            height: 120px;
+            resize: none;
+        }
+
+        .input-group input:focus, .input-group textarea:focus {
+            border-color: var(--primary-pink2);
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 15px rgba(255, 126, 185, 0.2);
+        }
+
+        button {
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            background-color: #ff7eb9;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 5px 15px rgba(255, 77, 148, 0.3);
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(255, 77, 148, 0.5);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .contact-container {
+                flex-direction: column;
+                height: auto;
+                margin-top: 100px;
+                margin-bottom: 30px;
+            }
+            .donut-side {
+                height: 300px;
+            }
+            .form-side {
+                padding: 30px;
+            }
+        }
+        .donut-side img{
+            width: 100%;
+            animation: rot 5s infinite;
+        }
+        @keyframes rot{
+            0%{
+
+            }
+            50%{
+                rotate: 10deg;
+            }
+        }
+</style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="../../index.html#home" class="logo">D<span>O</span>NUT</a>
+
+                <ul class="nav-links" id="nav-menu">
+                    <li><a href="../../index.html#home">Home</a></li>
+                    <li><a href="about-us.html">About</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html" class="contact-li">Contact</a></li>
+                </ul>
+
+                <div class="last-nav">
+                    <div class="cart-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="cart-icon">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                        <span class="cart-badge">0</span>
+                    </div>
+                    <a href="contact.html" class="btn-contact">Contact</a>
+
+                    <div class="hamburger" id="mobile-menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+      <div class="contact-container">
+        <div class="donut-side">
+            <img src="../images/donut2.png" alt="">
+        </div>
+
+        <div class="form-side">
+            <h1>Say Hello</h1>
+            <p>Have a question or just want to chat?</p>
+            
+            <form id="contactForm">
+                <div class="input-group">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" placeholder="Email Address" required>
+                </div>
+                <div class="input-group">
+                    <textarea id="message" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+    </main>
+
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-col brand-col">
+                <h2 class="footer-logo">DONUT <span>Store.</span></h2>
+                <p class="brand-desc">Spreading Sweetness through artisanal, hand-crafted joy since 2024.</p>
+                <div class="social-links">
+                    <a href="https://instagram.com" target="_blank" class="social-icon">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://facebook.com" target="_blank" class="social-icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="social-icon">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="product.html">Our Menu</a></li>
+                    <li><a href="product.html">Shop Online</a></li>
+                    <li><a href="services.html">Catering</a></li>
+                    <li><a href="contact.html">Locations</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Favorites</h3>
+                <ul>
+                    <li><a href="product.html">Pink Glaze</a></li>
+                    <li><a href="product.html">Dark Cocoa</a></li>
+                    <li><a href="product.html">Pista Green</a></li>
+                    <li><a href="product.html">Blue Berry</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col newsletter-col">
+                <h3>Join the Glaze.</h3>
+                <p>Get 10% off your first box.</p>
+                <form class="footer-form">
+                    <input type="email" placeholder="Email Address">
+                    <button type="submit">→</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Donut Store. Built for Sweetness.></p>
+            <button id="backToTop">↑ Top</button>
+        </div>
+    </footer>
+<script>
+        document.getElementById('contactForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const btn = e.target.querySelector('button');
+            const originalText = btn.innerText;
+            
+            btn.innerText = "Sent! successfully";
+            btn.style.background = "linear-gradient(45deg, #7afcff, #45b3e0)";
+            
+            setTimeout(() => {
+                btn.innerText = originalText;
+                btn.style.background = "linear-gradient(45deg, var(--primary-pink), #ff4d94)";
+                e.target.reset();
+            }, 3000);
+                            btn.style.background = "#ff4d94)";
+
+        });
+    </script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+body{
+    font-family: 'normal';
+    background-color: #FFF0F6;
+}
+        @font-face {
+  font-family: 'italic';
+  src: url('../Fonts/italic.woff2');
+}
+
+@font-face {
+  font-family: 'normal';
+  src: url('../Fonts/NeueMontreal-Regular.woff2');
+}
+@font-face {
+  font-family: 'tall';
+  src: url('../Fonts/LeagueGothic-Regular-VariableFont_wdth.ttf');
+}
+
+        :root {
+    --pink: #FF4FA3;
+    --dark: #1a1a1a;
+    --text-gray: #555555;
+    --soft-pink-bg: #fff0f6;
+}
+
+.our-story-premium {
+    padding: 120px 20px;
+    overflow: hidden;
+}
+
+.story-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    align-items: center;
+    gap: 80px;
+}
+
+/* Typography Styling */
+.story-tag {
+    display: block;
+    font-weight: 800;
+    letter-spacing: 4px;
+    color: var(--pink);
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.story-title {
+    font-size: clamp(40px, 5vw, 60px);
+    line-height: 1.1;
+    color: var(--dark);
+    margin-bottom: 30px;
+    font-family: 'normal';
+    font-weight: lighter;
+}
+
+.italic-pink {
+    font-family: 'italic'; 
+    color: var(--pink);
+    font-weight: 400;
+}
+
+.story-description {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 35px;
+    max-width: 500px;
+}
+
+/* Professional Pill Button */
+.btn-primary-pill {
+    display: inline-block;
+    padding: 18px 45px;
+    background-color: var(--pink);
+    color: white;
+    text-decoration: none;
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 1px;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 10px 25px rgba(255, 77, 166, 0.3);
+}
+
+.btn-primary-pill:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(255, 77, 166, 0.4);
+    background-color: var(--dark);
+}
+
+/* Image Layering & Effects */
+.story-visual {
+    position: relative;
+}
+
+.image-wrapper {
+    position: relative;
+    z-index: 2;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 40px;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+}
+
+/* The decorative shape behind the image */
+.shape-accent {
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--soft-pink-bg);
+    border-radius: 40px;
+    z-index: 1;
+}
+
+.experience-badge {
+    position: absolute;
+    top: 40px;
+    left: -40px;
+    background: white;
+    padding: 25px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    min-width: 100px;
+}
+
+.experience-badge .number {
+    font-size: 28px;
+    font-weight: 900;
+    color: var(--pink);
+}
+
+.experience-badge .label {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--dark);
+    letter-spacing: 1px;
+}
+
+/* Responsive Fix */
+@media (max-width: 992px) {
+    .story-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 60px;
+    }
+    .story-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .shape-accent {
+        display: none;
+    }
+    .experience-badge {
+        left: 20px;
+    }
+}
+
+:root {
+    --pink: #ff4da6;
+    --dark: #0f0f0f;
+    --glass: rgba(255, 255, 255, 0.8);
+}
+
+.glaze-bento-section {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.bento-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Massive Background Typography */
+.bento-header {
+    position: relative;
+    margin-bottom: 60px;
+}
+
+
+
+.main-title {
+    font-size: clamp(24px, 7vw, 80px);
+    position: relative;
+    z-index: 1;
+    color: var(--dark);
+    line-height: 1;
+    font-weight: lighter;
+}
+
+.italic-pink {
+    font-family: 'italic'; 
+    color: var(--pink);
+        font-weight: lighter;
+
+}
+
+/* The Bento Grid */
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 300px);
+    gap: 25px;
+    font-weight: lighter;
+}
+
+.bento-item {
+    position: relative;
+    background: #f8f8f8;
+    border-radius: 40px;
+    overflow: hidden;
+    padding: 40px;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    cursor: crosshair;
+}
+
+/* Grid Layout Logic */
+.item-wide { grid-column: span 2; background: var(--dark); color: white; }
+.item-tall { grid-row: span 2; background: #fff0f6; }
+.item-small { grid-column: span 1; background: white; border: 2px solid #eee; }
+.item-small2 { grid-column: span 1; background: var(--pink); border: 1px solid #eee; color: white; }
+.item-small2 .item-tag{
+    color: white;
+}
+
+
+/* Styling Internal Content */
+.item-tag { font-size: 12px; font-weight: 800; letter-spacing: 2px; color: var(--pink); opacity: 0.8; }
+.bento-item h4 { font-size: 38px; margin: 20px 0; line-height: 1.1; font-weight: lighter; }
+.bento-item p { font-size: 16px; line-height: 1.6; opacity: 0.7; max-width: 550px; }
+
+
+
+.item-wide:hover::before { opacity: 0.4; transform: scale(1.1); }
+.item-wide:hover { transform: translateY(-10px); }
+
+/* Card 2 Hover: Circle Expansion */
+.item-visual-circle {
+    position: absolute;
+    bottom: -50px; right: -50px;
+    width: 250px; height: 250px;
+    background: var(--pink);
+    border-radius: 50%;
+    filter: blur(40px);
+    opacity: 0.2;
+    transition: 0.6s;
+}
+
+.item-tall:hover .item-visual-circle {
+    transform: scale(2.5);
+    opacity: 0.4;
+}
+
+/* Mobile optimization */
+@media (max-width: 900px) {
+    .bento-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .item-wide, .item-tall { grid-column: span 1; grid-row: span 1; }
+    .massive-text { font-size: 80px; top: -40px; }
+}
+
+    </style>
+</head>
+<body>
+     <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="../../index.html#home" class="logo">D<span>O</span>NUT</a>
+
+                <ul class="nav-links" id="nav-menu">
+                    <li><a href="../../index.html#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html" class="contact-li">Contact</a></li>
+                </ul>
+
+                <div class="last-nav">
+                    <div class="cart-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="cart-icon">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                        <span class="cart-badge">0</span>
+                    </div>
+                    <a href="contact.html" class="btn-contact">Contact</a>
+
+                    <div class="hamburger" id="mobile-menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+   
+    <section class="our-story-premium">
+    <div class="story-container">
+        <div class="story-content">
+            <span class="story-tag">SINCE 2024</span>
+            <h2 class="story-title">
+                Crafting Moments of <br>
+                <span class="italic-pink">Pure Happiness.</span>
+            </h2>
+            <p class="story-description">
+                What started in a small home kitchen has grown into a sanctuary for donut lovers. 
+                We don’t believe in mass production; we believe in the art of the 24-hour dough, 
+                hand-dipped glazes, and flavors that tell a story. Every bite is a balance of 
+                crunch, fluff, and magic.
+            </p>
+            <div class="story-cta">
+                <a href="#" class="btn-primary-pill">Learn Our Secret</a>
+            </div>
+        </div>
+
+        <div class="story-visual">
+            <div class="image-wrapper">
+                <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=800&q=80" alt="Baking Art">
+                <div class="experience-badge">
+                    <span class="number">100%</span>
+                    <span class="label">Artisanal</span>
+                </div>
+            </div>
+            <div class="shape-accent"></div>
+        </div>
+    </div>
+</section>
+
+<section class="glaze-bento-section">
+    <div class="bento-container">
+        
+        <div class="bento-header">
+            <h3 class="main-title">The Heart of <br> <span class="italic-pink">the Glaze.</span></h3>
+        </div>
+
+        <div class="bento-grid">
+            
+            <div class="bento-item item-wide">
+                <div class="item-content">
+                    <span class="item-tag">01 / THE CRAFT</span>
+                    <h4>Cloud-Like <span class="italic-text">Fermentation.</span></h4>
+                    <p>Our dough isn't rushed. It rests for 24 hours in a temperature-controlled vault, allowing the flavor to develop and the texture to become impossibly light.</p>
+                </div>
+                <div class="item-overlay"></div>
+            </div>
+
+            <div class="bento-item item-tall">
+                <div class="item-content">
+                    <span class="item-tag">02 / THE SCIENCE</span>
+                    <h4>The Alchemy of <br> <span class="italic-text">Flavors.</span></h4>
+                    <p>We measure viscosity and temperature to ensure every dip creates the perfect "velvet drip." Our glazes are made with real fruit reductions and 70% dark cocoa.</p>
+                </div>
+                <div class="item-visual-circle"></div>
+            </div>
+
+            <div class="bento-item item-small ">
+                <div class="item-content">
+                    <span class="item-tag">03 / THE ART</span>
+                    <h4>Hand <span class="italic-text">Painted.</span></h4>
+                    <p>No machines, no shortcuts. Every sprinkle and gold flake is placed by hand for visual perfection.</p>
+                </div>
+                <div class="interactive-glow"></div>
+            </div>
+
+            <div class="bento-item item-small item-small2">
+                <div class="item-content">
+                    <span class="item-tag">04 / THE VIBE</span>
+                    <h4>Baked <span class="italic-text">Daily.</span></h4>
+                    <p>Freshness is our religion. If it wasn't baked at 4:00 AM today, it doesn't leave our kitchen.</p>
+                </div>
+                <div class="interactive-glow"></div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+        <section class="about-section" id="about">
+            <div class="container">
+
+                <div class="about-grid">
+
+                    <div class="grid-block image-block">
+                        <div class="img-wrapper-top">
+                            <img src="../images/about-img-2.webp" alt="Assorted Gourmet Donuts">
+                        </div>
+                    </div>
+
+                    <div class="grid-block content-block purple-bg">
+                        <div class="block-icon"><i class="fa-solid fa-heart"></i></div>
+                        <h3>Artisanal Donut <span>Crafting.</span></h3>
+                        <p>At the heart of our bakery lies a deep love for the perfect dough. We carefully mix premium
+                            ingredients and apply time-honored rising techniques to achieve that signature cloud-like
+                            texture. Every glaze is simmered with intention, and every donut is crafted with joy.</p>
+                        <button class="btn-outline">View Menu <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <div class="about-grid about-grid-2">
+
+                    <div class="grid-block content-block peach-bg">
+                        <div class="block-icon"><i class="fa-solid fa-hand-sparkles"></i></div>
+                        <h3>Premium Local <span>Ingredients.</span></h3>
+                        <p>We use only the finest locally sourced dairy, real fruit purees, and organic flour to create
+                            our signature treats. Every batch is carefully kneaded to enhance flavor and texture. Our
+                            bakers craft each piece.</p>
+                        <button class="btn-outline">View Menu <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+
+                    <div class="grid-block image-block-shaped peach-bg">
+                        <div class="shape-container">
+                            <img src="../images/about-img-3.webp" alt="Baker Glazing a Donut">
+                        </div>
+                    </div>
+
+                </div>
+
+                   <div class="about-grid">
+
+                    <div class="grid-block image-block">
+                        <div class="img-wrapper-top">
+                            <img src="../images/about-img-1.webp" alt="Assorted Gourmet Donuts">
+                        </div>
+                    </div>
+
+                    <div class="grid-block content-block purple-bg">
+                        <div class="block-icon"><i class="fa-solid fa-heart"></i></div>
+                        <h3>Signature Baking <span>Rituals.</span></h3>
+                        <p>Every batch begins with a custom blend of spices, slow-proofed dough, and a final glaze made from
+                            fresh fruits. Our team pours heart into each step, creating treats that are as beautiful as they
+                            are delicious.</p>
+                        <button class="btn-outline">View Menu <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+ </main>
+  <footer class="footer-section">
+
+        <div class="footer-container">
+            <div class="footer-col brand-col">
+                <h2 class="footer-logo">DONUT <span>Store.</span></h2>
+                <p class="brand-desc">Spreading Sweetness through artisanal, hand-crafted joy since 2024.</p>
+                <div class="social-links">
+                    <a href="https://instagram.com" target="_blank" class="social-icon">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://facebook.com" target="_blank" class="social-icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="social-icon">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="product.html">Our Menu</a></li>
+                    <li><a href="product.html">Shop Online</a></li>
+                    <li><a href="services.html">Catering</a></li>
+                    <li><a href="contact.html">Locations</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Favorites</h3>
+                <ul>
+                    <li><a href="product.html">Pink Glaze</a></li>
+                    <li><a href="product.html">Dark Cocoa</a></li>
+                    <li><a href="product.html">Pista Green</a></li>
+                    <li><a href="product.html">Blue Berry</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col newsletter-col">
+                <h3>Join the Glaze.</h3>
+                <p>Get 10% off your first box.</p>
+                <form class="footer-form">
+                    <input type="email" placeholder="Email Address">
+                    <button type="submit">→</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Donut Store. Built for Sweetness.></p>
+            <button id="backToTop">↑ Top</button>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

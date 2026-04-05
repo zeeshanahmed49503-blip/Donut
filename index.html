@@ -14,7 +14,7 @@
 </head>
 
 <body>
-     <div id="intro-screen">
+    <div id="intro-screen">
         <div class="intro-content">
             <div class="loader loader-2"></div>
             <h1 class="intro-logo" style="text-transform: uppercase;">d<span>o</span>nut</h1>
@@ -27,15 +27,14 @@
     <header>
         <nav class="navbar">
             <div class="nav-container">
-                <div class="logo">D<span>O</span>NUT</div>
+                <a href="#home" class="logo">D<span>O</span>NUT</a>
 
                 <ul class="nav-links" id="nav-menu">
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#products">Products</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#shop">Shop</a></li>
-                    <li><a href="#contact" class="contact-li">Contact</a></li>
+                    <li><a href="assets/Html/about-us.html">About</a></li>
+                    <li><a href="assets/Html/product.html">Products</a></li>
+                    <li><a href="assets/Html/services.html">Services</a></li>
+                    <li><a href="assets/Html/contact.html" class="contact-li">Contact</a></li>
                 </ul>
 
                 <div class="last-nav">
@@ -49,7 +48,7 @@
                         </svg>
                         <span class="cart-badge">0</span>
                     </div>
-                    <a href="#contact" class="btn-contact">Contact</a>
+                    <a href="assets/Html/contact.html" class="btn-contact">Contact</a>
 
                     <div class="hamburger" id="mobile-menu">
                         <span class="bar"></span>
@@ -61,7 +60,7 @@
         </nav>
     </header>
     <main>
-        <section class="hero">
+        <section class="hero" id="home">
             <div class="hero-container">
                 <div class="hero-content">
                     <span class="hero-subtitle">Freshly Baked Daily</span>
@@ -71,8 +70,8 @@
                         locally sourced, and delivered straight to your door.
                     </p>
                     <div class="hero-actions">
-                        <a href="#shop" class="btn-main">Order Now</a>
-                        <a href="#menu" class="btn-outline">Explore Flavors</a>
+                        <a href="assets/Html/product.html" class="btn-main">Order Now</a>
+                        <a href="assets/Html/product.html" class="btn-outline">Explore Flavors</a>
                     </div>
                 </div>
 
@@ -85,11 +84,11 @@
             </div>
         </section>
 
-       <section class="about-us-section">
-        <div class="about-text">
-            <h1>Our Most Popular <br><span class="about-happiness">happiness</span></h1>
-        </div>
-       </section>
+        <section class="about-us-section">
+            <div class="about-text">
+                <h1>Our Most Popular <br><span class="about-happiness">happiness</span></h1>
+            </div>
+        </section>
 
         <section class="latest-items">
             <div class="client-section">
@@ -115,121 +114,129 @@
             </div>
         </section>
 
-        
-       <section class="about-section" id="about">
-    <div class="container">
-        <div class="about-header">
-            <h2>Why choose <span>Us?</span></h2>
-            <p class="hero-description" style="margin: auto;">From classic warm glazed rings to modern gourmet creations, our menu is designed to satisfy your sweet tooth with the fluffiest, freshest treats baked daily.</p>
-        </div>
 
-        <div class="about-grid">
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="about-header">
+                    <h2>Why choose <span>Us?</span></h2>
+                    <p class="hero-description" style="margin: auto;">From classic warm glazed rings to modern gourmet
+                        creations, our menu is designed to satisfy your sweet tooth with the fluffiest, freshest treats
+                        baked daily.</p>
+                </div>
 
-            <div class="grid-block image-block">
-                <div class="img-wrapper-top">
-                    <img src="Assets/images/about-img-2.webp" alt="Assorted Gourmet Donuts">
+                <div class="about-grid">
+
+                    <div class="grid-block image-block">
+                        <div class="img-wrapper-top">
+                            <img src="Assets/images/about-img-2.webp" alt="Assorted Gourmet Donuts">
+                        </div>
+                    </div>
+
+                    <div class="grid-block content-block purple-bg">
+                        <div class="block-icon"><i class="fa-solid fa-heart"></i></div>
+                        <h3>Artisanal Donut <span>Crafting.</span></h3>
+                        <p>At the heart of our bakery lies a deep love for the perfect dough. We carefully mix premium
+                            ingredients and apply time-honored rising techniques to achieve that signature cloud-like
+                            texture. Every glaze is simmered with intention, and every donut is crafted with joy.</p>
+                        <a href="assets/Html/about-us.html" class="btn-outline">View Menu <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="about-grid about-grid-2">
+
+                    <div class="grid-block content-block peach-bg">
+                        <div class="block-icon"><i class="fa-solid fa-hand-sparkles"></i></div>
+                        <h3>Premium Local <span>Ingredients.</span></h3>
+                        <p>We use only the finest locally sourced dairy, real fruit purees, and organic flour to create
+                            our signature treats. Every batch is carefully kneaded to enhance flavor and texture. Our
+                            bakers craft each piece with precision, ensuring every bite delivers a perfect balance of
+                            sweetness and warmth.</p>
+                        <a href="assets/Html/about-us.html" class="btn-outline">View Menu <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="grid-block image-block-shaped peach-bg">
+                        <div class="shape-container">
+                            <img src="Assets/images/about-img-3.webp" alt="Baker Glazing a Donut">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="modern-cta">
+            <img src="assets/images/donut2.png" class="img1" alt="">
+            <div class="cta-inner">
+                <span class="sub-heading">Artisanally Glazed</span>
+                <h1>Elevated Flavors, <br>Refined <span>For You.</span></h1>
+                <p>Experience a new standard of indulgence with our freshly crafted donuts, made daily with love and
+                    care. Each bite is prepared using only the finest organic ingredients to ensure rich taste and
+                    premium quality.</p>
+                <div class="button-group">
+                    <a href="#" class="btn-contact">View Collection</a>
+                    <a href="#" class="btn-outline">Our Story</a>
                 </div>
             </div>
+            <img src="assets/images/donut2.png" class="img2" alt="">
 
-            <div class="grid-block content-block purple-bg">
-                <div class="block-icon"><i class="fa-solid fa-heart"></i></div>
-                <h3>Artisanal Donut <span>Crafting.</span></h3>
-                <p>At the heart of our bakery lies a deep love for the perfect dough. We carefully mix premium ingredients and apply time-honored rising techniques to achieve that signature cloud-like texture. Every glaze is simmered with intention, and every donut is crafted with joy.</p>
-                <button class="btn-outline">View Menu <i class="fa-solid fa-arrow-right"></i></button>
-            </div>
-        </div>
-
-        <div class="about-grid about-grid-2">
-
-            <div class="grid-block content-block peach-bg">
-                <div class="block-icon"><i class="fa-solid fa-hand-sparkles"></i></div>
-                <h3>Premium Local <span>Ingredients.</span></h3>
-                <p>We use only the finest locally sourced dairy, real fruit purees, and organic flour to create our signature treats. Every batch is carefully kneaded to enhance flavor and texture. Our bakers craft each piece with precision, ensuring every bite delivers a perfect balance of sweetness and warmth.</p>
-                <button class="btn-outline">View Menu <i class="fa-solid fa-arrow-right"></i></button>
-            </div>
-            
-            <div class="grid-block image-block-shaped peach-bg">
-                <div class="shape-container">
-                    <img src="Assets/images/about-img-3.webp" alt="Baker Glazing a Donut">
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-</section>
-
-<section class="modern-cta">
-    <img src="assets/images/donut2.png" class="img1" alt="">
-    <div class="cta-inner">
-        <span class="sub-heading">Artisanally Glazed</span>
-        <h1>Elevated Flavors, <br>Refined <span>For You.</span></h1>
-        <p>Experience a new standard of indulgence with our freshly crafted donuts, made daily with love and care. Each bite is prepared using only the finest organic ingredients to ensure rich taste and premium quality.</p>
-        <div class="button-group">
-            <a href="#" class="btn-contact">View Collection</a>
-            <a href="#" class="btn-outline">Our Story</a>
-        </div>
-    </div>
-    <img src="assets/images/donut2.png" class="img2" alt="">
-
-</section>
-
-
+        </section>
     </main>
+
     <footer class="footer-section">
 
-    <div class="footer-container">
-        <div class="footer-col brand-col">
-            <h2 class="footer-logo">DONUT <span>Store.</span></h2>
-            <p class="brand-desc">Spreading Sweetness through artisanal, hand-crafted joy since 2024.</p>
-          <div class="social-links">
-    <a href="https://instagram.com" target="_blank" class="social-icon">
-        <i class="fa-brands fa-instagram"></i>
-    </a>
-    <a href="https://facebook.com" target="_blank" class="social-icon">
-        <i class="fa-brands fa-facebook-f"></i>
-    </a>
-    <a href="https://twitter.com" target="_blank" class="social-icon">
-        <i class="fa-brands fa-x-twitter"></i>
-    </a>
-</div>
+        <div class="footer-container">
+            <div class="footer-col brand-col">
+                <h2 class="footer-logo">DONUT <span>Store.</span></h2>
+                <p class="brand-desc">Spreading Sweetness through artisanal, hand-crafted joy since 2024.</p>
+                <div class="social-links">
+                    <a href="https://instagram.com" target="_blank" class="social-icon">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://facebook.com" target="_blank" class="social-icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="social-icon">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="assets/Html/product.html">Our Menu</a></li>
+                    <li><a href="assets/Html/product.html">Shop Online</a></li>
+                    <li><a href="assets/Html/services.html">Catering</a></li>
+                    <li><a href="assets/Html/contact.html">Locations</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Favorites</h3>
+                <ul>
+                    <li><a href="assets/Html/product.html">Pink Glaze</a></li>
+                    <li><a href="assets/Html/product.html">Dark Cocoa</a></li>
+                    <li><a href="assets/Html/product.html">Pista Green</a></li>
+                    <li><a href="assets/Html/product.html">Blue Berry</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col newsletter-col">
+                <h3>Join the Glaze.</h3>
+                <p>Get 10% off your first box.</p>
+                <form class="footer-form">
+                    <input type="email" placeholder="Email Address">
+                    <button type="submit">→</button>
+                </form>
+            </div>
         </div>
 
-        <div class="footer-col">
-            <h3>Explore</h3>
-            <ul>
-                <li><a href="#">Our Menu</a></li>
-                <li><a href="#">Shop Online</a></li>
-                <li><a href="#">Catering</a></li>
-                <li><a href="#">Locations</a></li>
-            </ul>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Donut Store. Built for Sweetness.></p>
+            <button id="backToTop">↑ Top</button>
         </div>
-
-        <div class="footer-col">
-            <h3>Favorites</h3>
-            <ul>
-                <li><a href="#">Pink Glaze</a></li>
-                <li><a href="#">Dark Cocoa</a></li>
-                <li><a href="#">Pista Green</a></li>
-                <li><a href="#">Blue Berry</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-col newsletter-col">
-            <h3>Join the Glaze.</h3>
-            <p>Get 10% off your first box.</p>
-            <form class="footer-form">
-                <input type="email" placeholder="Email Address">
-                <button type="submit">→</button>
-            </form>
-        </div>
-    </div>
-
-    <div class="footer-bottom">
-        <p>&copy; 2026 Donut Store. Built for Sweetness.></p>
-        <button id="backToTop">↑ Top</button>
-    </div>
-</footer>
+    </footer>
     <script src="assets/js/script.js"></script>
 </body>
 

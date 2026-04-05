@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Donut</title>
+        <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/media.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+
+@font-face {
+  font-family: 'italic';
+  src: url('/assets/Fonts/italic.woff2');
+}
+
+@font-face {
+  font-family: 'normal';
+  src: url('/assets/Fonts/NeueMontreal-Regular.woff2');
+}
+@font-face {
+  font-family: 'tall';
+  src: url('../Fonts/LeagueGothic-Regular-VariableFont_wdth.ttf');
+}
+
+.services-section {
+    padding: 100px 5%;
+    font-family: 'normal';
+    color: rgb(19, 19, 19);
+}
+
+.services-container {
+    max-width: 1200px;
+    margin: 70px auto;
+}
+
+/* Typography & Header */
+.services-intro {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #ff2d75;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.display-title {
+    font-family: 'normal', serif;
+    font-size: 3.5rem;
+    font-weight: lighter;
+    margin: 0;
+}
+
+.pink-glow {
+    color: #ff2d75;
+        font-family: 'italic', serif;
+
+}
+
+
+
+/* Grid Layout */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+}
+
+/* Service Card Style */
+.service-card {
+    background: linear-gradient(145deg, #111111, #0a0a0a);
+    padding: 50px 40px;
+    border-radius: 20px; /* Square edges for a "Classy" editorial look */
+    border: 1px solid #1a1a1a;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    position: relative;
+    overflow: hidden;
+    color: white;
+    font-family: 'normal';
+
+}
+
+.service-card:hover {
+    border-color: #ff2d75;
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* Icon Styling */
+.icon-wrapper {
+    width: 50px;
+    height: 50px;
+    color: #ff2d75;
+    margin-bottom: 30px;
+}
+
+.icon-wrapper svg {
+    width: 100%;
+    height: 100%;
+    stroke-width: 1.2; /* Thin lines = Classier */
+}
+
+/* Card Content */
+.service-card h3 {
+    font-family: 'normal', serif;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+    font-weight: normal;
+}
+
+.service-card p {
+    color: #888;
+    line-height: 1.8;
+    font-size: 0.95rem;
+    font-weight: 300;
+}
+
+/* Decorative Detail on Hover */
+.service-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #ff2d75;
+    transition: width 0.4s ease;
+}
+
+.service-card:hover::after {
+    width: 100%;
+}
+
+/* Responsive Scaling */
+@media (max-width: 768px) {
+    .display-title {
+        font-size: 2.5rem;
+    }
+    
+    .service-card {
+        padding: 40px 30px;
+    }
+}
+.modern-cta{
+    padding-bottom: 30px;
+    overflow: visible;
+    margin-top: 50px;
+}
+</style>
+    </head>
+<body>
+     <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="../../index.html#home" class="logo">D<span>O</span>NUT</a>
+
+                <ul class="nav-links" id="nav-menu">
+                    <li><a href="../../index.html#home">Home</a></li>
+                    <li><a href="about-us.html">About</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="contact.html" class="contact-li">Contact</a></li>
+                </ul>
+
+                <div class="last-nav">
+                    <div class="cart-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="cart-icon">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                        <span class="cart-badge">0</span>
+                    </div>
+                    <a href="contact.html" class="btn-contact">Contact</a>
+
+                    <div class="hamburger" id="mobile-menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+         <section class="modern-cta">
+            <img src="../images/donut2.png" class="img1" alt="">
+            <div class="cta-inner">
+                <span class="sub-heading">our services</span>
+                <h1>Quality That, <br>Gave <span>better health.</span></h1>
+                <p>Experience a new standard of indulgence with our freshly crafted donuts, made daily with love and
+                    care. Each bite is prepared using only the finest organic ingredients to ensure rich taste and
+                    premium quality.</p>
+                <div class="button-group">
+                    <a href="#" class="btn-contact">View Collection</a>
+                    <a href="#" class="btn-outline">Our Story</a>
+                </div>
+            </div>
+            <img src="../images/donut2.png" class="img2" alt="">
+
+        </section>
+<section class="services-section">
+    <div class="services-container">
+        <div class="services-intro">
+            <span class="eyebrow">Excellence in Every Bite</span>
+            <h2 class="display-title">Our Premium <span class="pink-glow">Services</span></h2>
+            <div class="title-underline"></div>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="icon-wrapper">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                </div>
+                <h3>Artisanal Baking</h3>
+                <p>Every donut is handcrafted daily using organic, locally sourced ingredients for peak freshness.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="icon-wrapper">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78v0z"/></svg>
+                </div>
+                <h3>Custom Designs</h3>
+                <p>Personalize your treats for weddings, birthdays, or corporate events with bespoke colors and flavors.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="icon-wrapper">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </div>
+                <h3>Express Delivery</h3>
+                <p>Our specialized temperature-controlled fleet ensures your donuts arrive as fresh as they left the oven.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="icon-wrapper">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <h3>Dietary Inclusivity</h3>
+                <p>Indulge without worry. We offer a dedicated range of premium Vegan and Gluten-Free masterpieces.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="icon-wrapper">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <h3>Event Catering</h3>
+                <p>Elevate your gatherings with our luxury donut towers and interactive dessert grazing tables.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="icon-wrapper">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                </div>
+                <h3>Subscription Club</h3>
+                <p>Join our elite tasting circle for monthly curated boxes of experimental, off-menu flavors.</p>
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+     <footer class="footer-section">
+
+        <div class="footer-container">
+            <div class="footer-col brand-col">
+                <h2 class="footer-logo">DONUT <span>Store.</span></h2>
+                <p class="brand-desc">Spreading Sweetness through artisanal, hand-crafted joy since 2024.</p>
+                <div class="social-links">
+                    <a href="https://instagram.com" target="_blank" class="social-icon">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://facebook.com" target="_blank" class="social-icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="social-icon">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="product.html">Our Menu</a></li>
+                    <li><a href="product.html">Shop Online</a></li>
+                    <li><a href="#services">Catering</a></li>
+                    <li><a href="contact.html">Locations</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Favorites</h3>
+                <ul>
+                    <li><a href="product.html">Pink Glaze</a></li>
+                    <li><a href="product.html">Dark Cocoa</a></li>
+                    <li><a href="product.html">Pista Green</a></li>
+                    <li><a href="product.html">Blue Berry</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col newsletter-col">
+                <h3>Join the Glaze.</h3>
+                <p>Get 10% off your first box.</p>
+                <form class="footer-form">
+                    <input type="email" placeholder="Email Address">
+                    <button type="submit">→</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Donut Store. Built for Sweetness.></p>
+            <button id="backToTop">↑ Top</button>
+        </div>
+    </footer>
+</body>
+</html>

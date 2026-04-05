@@ -35,6 +35,8 @@ button{
 body {
     background-color: var(--background);
       font-family: 'normal';
+        overflow-x: hidden;
+
 
 }
 header{
@@ -768,18 +770,19 @@ button{
     background-color: var(--mint-light);
 }
 
-
-/* Import classy fonts */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Jost:wght@300;400;500&display=swap');
-
 .modern-cta {
-    padding: 120px 20px;
+    padding: 150px 0px;
     color: #1a1a1a; /* Soft Charcoal */
     font-family: 'Jost', sans-serif;
     text-align: center;
     display: flex;
     justify-content: center;
     position: relative;
+    width: 100vw;
+     left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
     overflow: hidden;
 }
 
@@ -814,15 +817,15 @@ button{
 .modern-cta .img1{
     position: absolute;
     top: 0;
-    left: -270px;
-    max-height: 500px;
+    left: -370px;
+    max-height: 700px;
     animation: rotate 15s infinite;
 }
 .modern-cta .img2{
     position: absolute;
     top: 0;
-    right: -270px;
-    max-height: 500px;
+    right: -370px;
+    max-height: 700px;
     animation: rotate 10s infinite;
     transform: scaleX(-1);
 
